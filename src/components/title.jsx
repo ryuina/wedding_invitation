@@ -77,7 +77,7 @@ const Title = () => {
       <TitleWrapper>
         <WeddingInvitation>WEDDING  INVITATION</WeddingInvitation>
         <GroomBride>
-          {GROOM_NAME} &#38; {BRIDE_NAME}
+          {GROOM_NAME} ♥︎ {BRIDE_NAME}
         </GroomBride>
         <Schedule>
           {WEDDING_DATE}
