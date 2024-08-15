@@ -141,13 +141,12 @@ export function DefaultGallery() {
 return (
   <>
     {/* Gallery Grid */}
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    <div className="flex justify-center margin:0">
+      <div className="grid grid-cols-3 gap-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       {data.map(({ imageLink }, index) => (
           <div key={index}>
             <img
-              // className="h-40 w-full max-w-full rounded-lg object-cover object-center cursor-pointer"
-              className="h-40 w-40 rounded-lg object-cover object-center cursor-pointer"
+              className="aspect-[1/1] rounded-lg object-cover object-center cursor-pointer"
               src={imageLink}
               alt="gallery-photo"
               onClick={() => handleImageClick(index)}
