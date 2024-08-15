@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Divider } from "antd";
+import { Divider} from "antd";
+import { SmallDashOutlined,EllipsisOutlined } from "@ant-design/icons";
+
 import {
   GROOM_NAME,
   GROOM_FATHER_NAME,
@@ -51,8 +53,29 @@ const Content = styled.span`
 `;
 
 
+const ContentEnglish = styled.span`
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 2.3rem;
+  opacity: 0.75;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+    line-height: 1.75rem;
+  }
+`;
+
+
 const GroomBride = styled.p`
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
   font-size: 1rem;
   line-height: 1.75;
@@ -106,6 +129,23 @@ const Greeting = () => {
         오셔서 축복해 주시면 큰 기쁨이겠습니다.
         <br />
       </Content>
+      <EllipsisOutlined />
+      <ContentEnglish>
+        In the early days of our love, 
+        <br />
+        we stumbled as we tried to match each other's steps. 
+        <br />
+        Over the past years, 
+        <br />
+        we've grown to understand one another and our love deepening. 
+        <br />
+        Now, we wish to walk side by side on this new journey as husband and wife.
+        <br />
+        We warmly invite you to join us at the beginning of this journey 
+        <br />
+        and bless us with your presence, which would bring us immense joy.
+      </ContentEnglish>
+      <EllipsisOutlined />
       <GroomBride>
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의   장남 {GROOM_NAME}
         <br />
