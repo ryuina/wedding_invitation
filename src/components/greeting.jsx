@@ -64,12 +64,12 @@ const ContentEnglish = styled.span`
   background-position: center;
   
   @media (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 2rem;
   }
   @media (max-width: 480px) {
-    font-size: 0.95rem;
-    line-height: 1.75rem;
+    font-size: 0.92rem;
+    line-height: 1.7rem;
   }
 `;
 
@@ -137,13 +137,21 @@ const Greeting = () => {
         <br />
         Over the past years, 
         <br />
-        we've grown to understand one another and our love deepening. 
+        we've grown to understand one another 
         <br />
-        Now, we wish to walk side by side on this new journey as husband and wife.
+        and our love deepening. 
         <br />
-        We warmly invite you to join us at the beginning of this journey 
+        Now, we wish to walk side by side 
         <br />
-        and bless us with your presence, which would bring us immense joy.
+        on this new journey as husband and wife.
+        <br />
+        We warmly invite you 
+        <br />
+        to join us at the beginning of this journey 
+        <br />
+        and bless us with your presence, 
+        <br />
+        which would bring us immense joy.
       </ContentEnglish>
       <EllipsisOutlined />
       <GroomBride>
