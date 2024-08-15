@@ -33,18 +33,17 @@ const Title = styled.p`
   margin-bottom: 0;
 `;
 
-const Content = styled.p`
-  font-size: 0.875rem;
-  line-height: 1.75;
-  opacity: 0.75;
-  margin-bottom: 42px;
-`;
-
 const SubContent = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
-  margin-bottom: 42px;
+  
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const Description = styled.p`
@@ -84,14 +83,14 @@ const CongratulatoryMoney = () => {
       <ButtonWrap>
         <ContactButton  onClick={() => setGroomVisible(true)}>
           <SmileFilled
-            style={{ fontSize: 64, marginBottom: 0 }}
+            style={{ fontSize: 64, marginBottom: 10 }}
           />
           <br />
           <SubContent>신랑측 계좌번호 확인</SubContent>
         </ContactButton>
         <ContactButton  onClick={() => setBrideVisible(true)}>
           <SmileOutlined
-            style={{ fontSize: 64, marginBottom: 0 }}
+            style={{ fontSize: 64, marginBottom: 10 }}
           />
           <br />
           <SubContent>신부측 계좌번호 확인</SubContent>

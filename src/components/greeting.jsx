@@ -15,6 +15,9 @@ const Wrapper = styled.div`
   padding-top: 42px;
   margin: 0 auto;
   width: 70%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.p`
@@ -36,6 +39,15 @@ const Content = styled.span`
   opacity: 0.75;
   background-repeat: no-repeat;
   background-position: center;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+    line-height: 1.75rem;
+  }
 `;
 
 
@@ -48,6 +60,12 @@ const GroomBride = styled.p`
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 const Image = styled.img`
@@ -55,6 +73,12 @@ const Image = styled.img`
   margin: 0 auto;
   width: 1.375rem;
   padding-bottom: 42px;
+  @media (max-width: 768px) {
+    width: 1.25rem;
+  }
+  @media (max-width: 480px) {
+    width: 1rem;
+  }
 `;
 
 const Greeting = () => {
@@ -65,17 +89,22 @@ const Greeting = () => {
       </Divider>
       <Image src={Flower} />
       <Content>
-      연애 초반 서로의 걸음걸이를 맞추느라 서툴렀던 저희가
-        <br />
+        연애 초반 서로의 걸음걸이를 맞추느라 
+        <br />  
+        서툴렀던 저희가
+        <br />  
         지난 7년간 서로를 이해하고 닮아가며
-        <br />
+        <br />  
         깊은 사랑을 키워왔습니다.
         <br />
-        이제는 부부의 연으로 새로운 길을 나란히 걸어가고자 합니다.
+        이제는 부부의 연으로 
+        <br />  
+        새로운 길을 나란히 걸어가고자 합니다.
         <br />
         이 길의 시작점에 여러분을 초대하오니
         <br />
         오셔서 축복해 주시면 큰 기쁨이겠습니다.
+        <br />
       </Content>
       <GroomBride>
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의   장남 {GROOM_NAME}
