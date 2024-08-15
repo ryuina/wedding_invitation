@@ -66,7 +66,7 @@ const Schedule = styled.p`
 const TitleImage = () => {
   return (
     <figure class="max-w-lg ">
-      <img class="h-auto max-w-full rounded-lg  " src={img1} alt="image description"/>
+      <img class="h-auto max-w-full rounded-lg  " src={img1} alt=""/>
     </figure>
     
   );

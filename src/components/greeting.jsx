@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Divider} from "antd";
-import { SmallDashOutlined,EllipsisOutlined } from "@ant-design/icons";
+import { EllipsisOutlined } from "@ant-design/icons";
 
 import {
   GROOM_NAME,
