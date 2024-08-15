@@ -4,7 +4,9 @@ export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 
 export const WEDDING_DATE = "2024년 9월 29일, 일요일 오후 5시";
+export const WEDDING_DATE_EN = "September 29, 2024, 5PM (Sunday)";
 export const WEDDING_LOCATION = "이라운지 서울대학교";
+export const WEDDING_LOCATION_EN = "E-Lounge, Seoul National University";
 
 export const GROOM_NAME = "최장호";
 export const GROOM_ACCOUNT_NUMBER = "IBK 기업 00209702802017";

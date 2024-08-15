@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import {
   WEDDING_DATE,
+  WEDDING_DATE_EN,
   WEDDING_LOCATION,
+  WEDDING_LOCATION_EN,
   GROOM_NAME,
   BRIDE_NAME,
 } from "../config.js";
@@ -83,6 +85,11 @@ const Title = () => {
           {WEDDING_DATE}
           <br />
           {WEDDING_LOCATION}
+          <br />
+          <br />
+          {WEDDING_DATE_EN}
+          <br />
+          {WEDDING_LOCATION_EN}
         </Schedule>
       </TitleWrapper>
       <TitleImage />
