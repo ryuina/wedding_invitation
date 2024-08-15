@@ -51,6 +51,13 @@ const Description = styled.p`
   line-height: 1.75;
   opacity: 0.65;
   margin-top: 8px;
+  
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
+  }
 `;
 
 const ButtonWrap = styled.div`
