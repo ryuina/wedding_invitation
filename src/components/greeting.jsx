@@ -36,7 +36,6 @@ const Content = styled.span`
   margin: 0 auto;
   font-size: 1rem;
   text-align: center;
-  // color: var(--title-color);
   line-height: 2.3rem;
   opacity: 0.75;
   background-repeat: no-repeat;
@@ -75,8 +74,6 @@ const ContentEnglish = styled.span`
 
 
 const GroomBride = styled.p`
-  margin-top: 10px;
-  margin-bottom: 30px;
   font-size: 1rem;
   line-height: 1.75;
   opacity: 0.85;
