@@ -6,6 +6,7 @@ import Location from "./components/location";
 import Share from "./components/share";
 import Song from "./assets/song.mp3";
 import CongratulatoryMoney from "./components/congratulatoryMoney";
+import Acknowledge from "./components/acknowledge";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Photos />
         <Location />
         <CongratulatoryMoney />
+        <Acknowledge />
         <Share />
       </header>
     </div>
