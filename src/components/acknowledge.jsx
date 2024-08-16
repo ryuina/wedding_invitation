@@ -4,7 +4,7 @@ import { Divider} from "antd";
 import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
-  width: 85%;
+  width: 70%;
 `;
 
 const Title = styled.p`
