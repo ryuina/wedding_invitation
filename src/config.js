@@ -16,7 +16,7 @@ export const GROOM_MOTHER_NAME = "진경주";
 export const GROOM_MOTHER_ACCOUNT_NUMBER = "KB국민 884210102915";
 
 export const BRIDE_NAME = "구현진";
-export const BRIDE_ACCOUNT_NUMBER = "우리은행 1002-047-747-697";
+export const BRIDE_ACCOUNT_NUMBER = "카카오뱅크 3333-12-9766739";
 export const BRIDE_FATHER_NAME = "구한준";
 export const BRIDE_FATHER_ACCOUNT_NUMBER = "MG새마을금고 6251100463893";
 export const BRIDE_MOTHER_NAME = "조은영";
