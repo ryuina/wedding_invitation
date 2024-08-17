@@ -77,6 +77,8 @@ const Acknowledge = () => {
         <b>하진</b>, 천상의 보이스로 
         식장을 채워 줄 마징 사랑해, 고마워!
         <br />  
+        <b>박지애</b> 바이올리니스트님, 흔쾌히 축주를 수락해주셔서 정말 감사합니다!
+        <br />  
         <b>Linus</b>, we're so grateful for your singing
         <br />  
         at our wedding. Tack!
