@@ -9,15 +9,15 @@ export const WEDDING_LOCATION = "이라운지 서울대학교";
 export const WEDDING_LOCATION_EN = "E-Lounge, Seoul National University";
 
 export const GROOM_NAME = "최장호";
-export const GROOM_ACCOUNT_NUMBER = "IBK 기업 00209702802017";
+export const GROOM_ACCOUNT_NUMBER = "IBK 기업 002-097027-02-017";
 export const GROOM_FATHER_NAME ="최중형";
-export const GROOM_FATHER_ACCOUNT_NUMBER = "KB국민 848210023376";
+export const GROOM_FATHER_ACCOUNT_NUMBER = "KB국민 848-21-0023-376";
 export const GROOM_MOTHER_NAME = "진경주";
-export const GROOM_MOTHER_ACCOUNT_NUMBER = "KB국민 884210102915";
+export const GROOM_MOTHER_ACCOUNT_NUMBER = "KB국민 884-21-0102-915";
 
 export const BRIDE_NAME = "구현진";
 export const BRIDE_ACCOUNT_NUMBER = "카카오뱅크 3333-12-9766739";
 export const BRIDE_FATHER_NAME = "구한준";
-export const BRIDE_FATHER_ACCOUNT_NUMBER = "MG새마을금고 6251100463893";
+export const BRIDE_FATHER_ACCOUNT_NUMBER = "MG새마을금고 6251-1004-6389-3";
 export const BRIDE_MOTHER_NAME = "조은영";
 // export const BRIDE_MOTHER_ACCOUNT_NUMBER = "○○은행 ***-***-******";
