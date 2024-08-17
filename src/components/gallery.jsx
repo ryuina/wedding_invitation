@@ -144,9 +144,9 @@ return (
     <div className="flex justify-center margin:0">
       <div className="grid grid-cols-3 gap-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       {data.map(({ imageLink }, index) => (
-          <div key={index} className="aspect-w-1 aspect-h-1">
+          <div key={index} className="aspect-square">
             <img
-              className="aspect-square rounded-lg object-cover object-center cursor-pointer"
+              className="inset-0 h-full w-full rounded-lg object-cover object-center cursor-pointer"
               src={imageLink}
               alt="gallery-photo"
               onClick={() => handleImageClick(index)}
