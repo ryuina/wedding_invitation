@@ -146,7 +146,7 @@ return (
       {data.map(({ imageLink }, index) => (
           <div key={index}>
             <img
-              className="aspect-[1/1] rounded-lg object-cover object-center cursor-pointer"
+              className="aspect-square rounded-lg object-cover object-center cursor-pointer"
               src={imageLink}
               alt="gallery-photo"
               onClick={() => handleImageClick(index)}
