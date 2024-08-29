@@ -6,7 +6,7 @@ import "../styles/index.css";
 import img2 from "../photos/2.jpg";
 import img3 from "../photos/3.jpg";
 import img4 from "../photos/4.jpg";
-import img5 from "../photos/5.jpg";
+// import img5 from "../photos/5.jpg";
 import img6 from "../photos/6.jpg";
 import img7 from "../photos/7.jpg";
 import img8 from "../photos/8.jpg";
@@ -18,12 +18,21 @@ import img13 from "../photos/13.jpg";
 import img14 from "../photos/14.jpg";
 import img15 from "../photos/15.png";
 import img16 from "../photos/16.jpg";
-import img17 from "../photos/17.jpg";
+// import img17 from "../photos/17.jpg";
 import img18 from "../photos/18.jpg";
 import img19 from "../photos/19.jpg";
 import img20 from "../photos/20.jpg";
 import img21 from "../photos/21.jpg";
 import img22 from "../photos/22.jpg";
+// import img23 from "../photos/23.jpg";
+import img24 from "../photos/24.jpg";
+import img25 from "../photos/25.jpg";
+import img26 from "../photos/26.jpg";
+import img27 from "../photos/27.jpg";
+import img28 from "../photos/28.jpg";
+import img29 from "../photos/29.jpg";
+import img30 from "../photos/30.jpg";
+import img31 from "../photos/31.jpg";
 
 export function DefaultGallery() {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -40,10 +49,10 @@ export function DefaultGallery() {
       imageLink:
         img4
     },
-    {
-      imageLink:
-        img5
-    },
+    // {
+    //   imageLink:
+    //     img5
+    // },
     {
       imageLink:
         img6
@@ -88,10 +97,10 @@ export function DefaultGallery() {
       imageLink:
         img16
     },
-    {
-      imageLink:
-        img17
-    },
+    // {
+    //   imageLink:
+    //     img17
+    // },
     {
       imageLink:
         img18
@@ -112,7 +121,39 @@ export function DefaultGallery() {
       imageLink:
         img22
     },
-    
+    // {
+    {
+      imageLink:
+        img24
+    },
+    {
+      imageLink:
+        img25
+    },
+    {
+      imageLink:
+        img26
+    },
+    {
+      imageLink:
+        img27
+    },
+    {
+      imageLink:
+        img28
+    },
+    {
+      imageLink:
+        img29
+    },
+    {
+      imageLink:
+        img30
+    },
+    {
+      imageLink:
+        img31
+    },
   ];
   const handleImageClick = (index) => {
     setSelectedIndex(index);
