@@ -1,22 +1,16 @@
 import React, { useEffect } from "react";
-import { Divider } from "antd";
 import styled from "styled-components";
 import img_map from "../assets/map.png";
+import StyledDivider from "./StyledDivider.jsx";
+import { Title } from "./common.js"
 
 const Wrapper = styled.div`
   padding-top: 42px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 `;
 
-const Title = styled.span`
-  font-size: 1.5rem;
-  // color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
-  margin-top: 0;
-  margin-bottom: 0;
-`;
+
 
 const SubTitle = styled.span`
   font-size: 1.2rem;
@@ -30,18 +24,21 @@ const SubTitle = styled.span`
 const Content = styled.p`
   font-size: 1rem;
   line-height: 1.75;
-  opacity: 0.75;
   width: 100%;
   text-align: center;
-  padding-top: 42px;
-  padding-bottom: 42px;
-  margin: 0;
+  margin: 32px 0;
+
+  span {
+    font-size: 0.85rem;
+  }
 `;
 
 const Map = styled.div`
+  width: 80%;
   height: 100%;
   padding: 0;
 `;
+
 const LocationImage = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -50,6 +47,7 @@ const LocationImage = () => {
   );
 };
 
+
 const Location = () => {
   // 카카오 맵 불러오기
 
@@ -57,10 +55,10 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1723696018405",
-    "key" : "2kcqg",
-    "mapWidth" : "640",
-    "mapHeight" : "360"
+		"timestamp" : "1726447614646",
+		"key" : "2kozk",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
@@ -104,27 +102,27 @@ const Location = () => {
 
   return (
     <Wrapper>
-      <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
+      <StyledDivider>
         <Title>오시는 길</Title>
-      </Divider>
-      
+      </StyledDivider>
+
+
       <Map
-        id="daumRoughmapContainer1723696018405"
+        id="daumRoughmapContainer1726447614646"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
-      
-      <Content>        
-        이라운지 서울대점
+      <Content>
+        어린이회관 내 공간한옥 [근화원]
         <br />
-        서울시 관악구 관악로 1 서울대학교 310동 엔지니어하우스 이라운지
+        서울 광진구 광나루로 441 ( 능동 18-11 )
         <br />
-        전화번호: 02-875-7761
+        <span>* 어린이회관 정문 주차장 이용 / 2시간 무료 주차</span>
         <br />
-        <br />
-        <LocationImage/>
-        <br />
-        
-        
+
+      </Content>
+
+
+      <Content>
         <SubTitle>대중교통 안내</SubTitle>
         <br />
         <br />
@@ -147,11 +145,11 @@ const Location = () => {
         <SubTitle>자가용 안내</SubTitle>
         <br />
         <br />
-        네비게이션에서 [이라운지 서울대점]을 입력하세요. 
+        네비게이션에서 [이라운지 서울대점]을 입력하세요.
         <br />
         2시간 무료 주차권을 꼭 받아가세요!
         <br />
-        
+
 
       </Content>
     </Wrapper>

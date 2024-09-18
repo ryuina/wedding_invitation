@@ -3,157 +3,34 @@ import React, { useState } from 'react';
 import { Divider } from "antd";
 import styled from "styled-components";
 import "../styles/index.css";
-import img2 from "../photos/2.jpg";
-import img3 from "../photos/3.jpg";
-import img4 from "../photos/4.jpg";
-// import img5 from "../photos/5.jpg";
-import img6 from "../photos/6.jpg";
-import img7 from "../photos/7.jpg";
-import img8 from "../photos/8.jpg";
-import img9 from "../photos/9.jpg";
-import img10 from "../photos/10.jpg";
-import img11 from "../photos/11.jpg";
-import img12 from "../photos/12.jpg";
-import img13 from "../photos/13.jpg";
-import img14 from "../photos/14.jpg";
-import img15 from "../photos/15.png";
-import img16 from "../photos/16.jpg";
-// import img17 from "../photos/17.jpg";
-import img18 from "../photos/18.jpg";
-import img19 from "../photos/19.jpg";
-import img20 from "../photos/20.jpg";
-import img21 from "../photos/21.jpg";
-import img22 from "../photos/22.jpg";
-// import img23 from "../photos/23.jpg";
-import img24 from "../photos/24.jpg";
-import img25 from "../photos/25.jpg";
-import img26 from "../photos/26.jpg";
-import img27 from "../photos/27.jpg";
-import img28 from "../photos/28.jpg";
-import img29 from "../photos/29.jpg";
-import img30 from "../photos/30.jpg";
-import img31 from "../photos/31.jpg";
+import img1 from "../assets/images/img1.jpg";
+import img2 from "../assets/images/img2.jpg";
+import img3 from "../assets/images/img3.jpg";
+
 
 export function DefaultGallery() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const data = [
     {
       imageLink:
-       img2,
+        img1,
+    },
+    {
+      imageLink:
+        img2
     },
     {
       imageLink:
         img3
     },
-    {
-      imageLink:
-        img4
-    },
-    // {
-    //   imageLink:
-    //     img5
-    // },
-    {
-      imageLink:
-        img6
-    },
-    {
-      imageLink:
-        img7
-    },
-    {
-      imageLink:
-        img8
-    },
-    {
-      imageLink:
-        img9
-    },
-    {
-      imageLink:
-        img10
-    },
-    {
-      imageLink:
-        img11
-    },
-    {
-      imageLink:
-        img12
-    },
-    {
-      imageLink:
-        img13
-    },
-    {
-      imageLink:
-        img14
-    },
-    {
-      imageLink:
-        img15
-    },
-    {
-      imageLink:
-        img16
-    },
-    // {
-    //   imageLink:
-    //     img17
-    // },
-    {
-      imageLink:
-        img18
-    },
-    {
-      imageLink:
-        img19
-    },
-    {
-      imageLink:
-        img20
-    },
-    {
-      imageLink:
-        img21
-    },
-    {
-      imageLink:
-        img22
-    },
-    // {
-    {
-      imageLink:
-        img24
-    },
-    {
-      imageLink:
-        img25
-    },
-    {
-      imageLink:
-        img26
-    },
-    {
-      imageLink:
-        img27
-    },
-    {
-      imageLink:
-        img28
-    },
-    {
-      imageLink:
-        img29
-    },
-    {
-      imageLink:
-        img30
-    },
-    {
-      imageLink:
-        img31
-    },
+    /*
+    4-6 : 뛰어오는 시리즈
+    7-9 : 기타 웨딩사진
+    10-19 : 14년도 ~ 23년도
+    20,21 or 24: 23, 24년도 찍은거 + 맛깜이랑
+    영상 2개 
+    */
+  
   ];
   const handleImageClick = (index) => {
     setSelectedIndex(index);
@@ -179,67 +56,67 @@ export function DefaultGallery() {
       handleClose();
     }
   };
-return (
-  <>
-    {/* Gallery Grid */}
-    <div className="flex justify-center margin:0">
-      <div className="grid grid-cols-3 gap-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      {data.map(({ imageLink }, index) => (
-          <div key={index} className="aspect-square">
-            <img
-              className="inset-0 h-full w-full rounded-lg object-cover object-center cursor-pointer"
-              src={imageLink}
-              alt="gallery-photo"
-              onClick={() => handleImageClick(index)}
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Modal for Full-Size Image */}
-    {selectedIndex !== null && (
-      <div
-        id="modal-background"
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-        onClick={handleBackgroundClick}
-      >
-        <div className="relative flex items-center">
-          {/* Previous Button */}
-          <button
-            className="absolute left-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-50 rounded-full hover:bg-opacity-100"
-            onClick={handlePrev}
-          >
-            &#10094;
-          </button>
-
-          {/* Full-Size Image */}
-          <img
-            className="max-h-[90vh] max-w-[90vw] rounded-lg object-contain"
-            src={data[selectedIndex].imageLink}
-            alt="full-size"
-          />
-
-          {/* Next Button */}
-          <button
-            className="absolute right-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-50 rounded-full hover:bg-opacity-100"
-            onClick={handleNext}
-          >
-            &#10095;
-          </button>
-
-          {/* Close Button */}
-          <button
-            className="absolute top-2 right-2 text-white text-2xl"
-            onClick={handleClose}
-          >
-            &times;
-          </button>
+  return (
+    <>
+      {/* Gallery Grid */}
+      <div className="flex justify-center margin:0">
+        <div className="grid grid-cols-3 gap-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {data.map(({ imageLink }, index) => (
+            <div key={index} className="aspect-square">
+              <img
+                className="inset-0 h-full w-full rounded-lg object-cover object-center cursor-pointer"
+                src={imageLink}
+                alt="gallery-photo"
+                onClick={() => handleImageClick(index)}
+              />
+            </div>
+          ))}
         </div>
       </div>
-    )}
-  </>
-);
+
+      {/* Modal for Full-Size Image */}
+      {selectedIndex !== null && (
+        <div
+          id="modal-background"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+          onClick={handleBackgroundClick}
+        >
+          <div className="relative flex items-center">
+            {/* Previous Button */}
+            <button
+              className="absolute left-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-50 rounded-full hover:bg-opacity-100"
+              onClick={handlePrev}
+            >
+              &#10094;
+            </button>
+
+            {/* Full-Size Image */}
+            <img
+              className="max-h-[90vh] max-w-[90vw] rounded-lg object-contain"
+              src={data[selectedIndex].imageLink}
+              alt="full-size"
+            />
+
+            {/* Next Button */}
+            <button
+              className="absolute right-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-0 rounded-full hover:bg-opacity-100"
+              onClick={handleNext}
+            >
+              &#10095;
+            </button>
+
+            {/* Close Button */}
+            <button
+              className="absolute top-2 right-2 text-white text-2xl"
+              onClick={handleClose}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
 const Wrapper = styled.div`
   padding-top: 42px;

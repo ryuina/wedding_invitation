@@ -4,9 +4,10 @@ import Greeting from "./components/greeting";
 import Photos from "./components/gallery";
 import Location from "./components/location";
 import Share from "./components/share";
-import Song from "./assets/song.mp3";
+import Song from "./assets/steal-the-show-inst.mp3";
 import CongratulatoryMoney from "./components/congratulatoryMoney";
 import Acknowledge from "./components/acknowledge";
+import Introduction from './components/Introduction';
 
 function App() {
   return (
@@ -17,10 +18,10 @@ function App() {
         </audio>
         <Title />
         <Greeting />
+        <Introduction />
         <Photos />
         <Location />
         <CongratulatoryMoney />
-        <Acknowledge />
         <Share />
       </header>
     </div>

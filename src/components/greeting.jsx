@@ -1,17 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Divider} from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
-
-import {
-  GROOM_NAME,
-  GROOM_FATHER_NAME,
-  GROOM_MOTHER_NAME,
-  BRIDE_NAME,
-  BRIDE_FATHER_NAME,
-  BRIDE_MOTHER_NAME,
-} from "../config";
-import Flower from "../assets/flower1.png";
+import StyledDivider from "./StyledDivider.jsx";
+import { Title } from "./common.js"
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -22,24 +13,17 @@ const Wrapper = styled.div`
   }
 `;
 
-const Title = styled.p`
-  font-size: 1.5rem;
-  // color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
-  margin-bottom: 0;
-  text-align: center;
-`;
-
 const Content = styled.span`
   display: block;
   margin: 0 auto;
+  margin-bottom: 32px;
   font-size: 1rem;
   text-align: center;
   line-height: 2.3rem;
-  opacity: 0.75;
+
   background-repeat: no-repeat;
   background-position: center;
+
   
   @media (max-width: 768px) {
     font-size: 0.9rem;
@@ -52,31 +36,11 @@ const Content = styled.span`
 `;
 
 
-const ContentEnglish = styled.span`
-  display: block;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  text-align: center;
-  line-height: 2.3rem;
-  opacity: 0.75;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-  @media (max-width: 768px) {
-    font-size: 0.95rem;
-    line-height: 2rem;
-  }
-  @media (max-width: 480px) {
-    font-size: 0.92rem;
-    line-height: 1.7rem;
-  }
-`;
-
-
 const GroomBride = styled.p`
   font-size: 1rem;
   line-height: 1.75;
   opacity: 0.85;
+  margin-top: 24px;
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
@@ -85,6 +49,12 @@ const GroomBride = styled.p`
   }
   @media (max-width: 480px) {
     font-size: 0.95rem;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
   }
 `;
 
@@ -104,60 +74,30 @@ const Image = styled.img`
 const Greeting = () => {
   return (
     <Wrapper>
-      <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
-        <Title>초대합니다</Title>
-      </Divider>
-      <Image src={Flower} />
+      <StyledDivider>
+        <Title>인아 <span>그리고</span> 현우</Title>
+      </StyledDivider>
+      {/* <Image src={Flower} /> */}
       <Content>
-        연애 초반 서로의 걸음걸이를 맞추느라 
-        <br />  
-        서툴렀던 저희가
-        <br />  
-        지난 7년간 서로를 이해하고 닮아가며
-        <br />  
-        깊은 사랑을 키워왔습니다.
+        대학시절 시작한 풋풋한 사랑이
         <br />
-        이제는 부부의 연으로 
-        <br />  
-        새로운 길을 나란히 걸어가고자 합니다.
+        10년이 지난 지금 그 결실을 맺으려 합니다.
         <br />
-        이 길의 시작점에 여러분을 초대하오니
+        한땀 한땀 키워온 소중한 사랑,
         <br />
-        오셔서 축복해 주시면 큰 기쁨이겠습니다.
+        아름답게 간직하며 즐겁게 살겠습니다.
         <br />
+        <br />
+        저희의 새로운 시작을 함께 기뻐해주실
+        <br />
+        소중한 분들께 이 초대장을 드립니다.
       </Content>
-      <EllipsisOutlined />
-      <ContentEnglish>
-        In the early days of our love, 
-        <br />
-        we stumbled as we tried to match each other's steps. 
-        <br />
-        Over the past years, 
-        <br />
-        we've grown to understand one another 
-        <br />
-        and our love deepening. 
-        <br />
-        Now, we wish to walk side by side 
-        <br />
-        on this new journey as husband and wife.
-        <br />
-        We warmly invite you 
-        <br />
-        to join us at the beginning of this journey 
-        <br />
-        and bless us with your presence, 
-        <br />
-        which would bring us immense joy.
-      </ContentEnglish>
-      <EllipsisOutlined />
+      <EllipsisOutlined style={{ opacity: 0.5 }} />
       <GroomBride>
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의   장남 {GROOM_NAME}
-        <br />
-        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의   차녀 {BRIDE_NAME}
+        <div><span><b>주일륜</b> · <b>송정화</b> 의 차남</span><span><b>주현우</b></span></div>
+        <div><span><b>류광영</b> · <b>장동숙</b> 의 장녀</span><span><b>류인아</b></span></div>
       </GroomBride>
-      
-    </Wrapper>
+    </Wrapper >
   );
 };
 

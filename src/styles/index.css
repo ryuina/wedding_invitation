@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --title-color: #211e1e;
+  --title-color: #004225;
 }
+
 * {
-  font-family: "Noto Serif KR", serif, -apple-system, BlinkMacSystemFont,
+  font-family: 'Crimson Pro', "Nanum Myeongjo", serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -20,9 +21,11 @@
   width: 100% !important;
   max-height: 240px !important;
 }
+
 .root_daum_roughmap_landing {
   margin: auto !important;
 }
+
 .root_daum_roughmap .wrap_btn_zoom {
   display: none !important;
 }
@@ -31,33 +34,43 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @-moz-keyframes fadein {
+
   /* Firefox */
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes fadein {
+
   /* Safari and Chrome */
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @-o-keyframes fadein {
+
   /* Opera */
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -80,13 +93,7 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "bodoni";
-  src: url("../assets/fonts/bodoni.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+
 @font-face {
   font-family: "eulyoo";
   src: url("../assets/fonts/Eulyoo1945-Regular.ttf") format("truetype");
