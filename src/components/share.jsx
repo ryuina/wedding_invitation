@@ -3,7 +3,8 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { Button, Divider, message } from "antd";
 import { MessageFilled, LinkOutlined } from "@ant-design/icons";
 import styled from "styled-components";
-
+import StyledDivider from "./StyledDivider.jsx";
+import { Title } from "./common.js"
 import {
   KAKAOTALK_API_TOKEN,
   KAKAOTALK_SHARE_IMAGE,
@@ -13,18 +14,10 @@ import {
 } from "../config";
 
 const Wrapper = styled.div`
-  padding-top: 42px;
   width: 100%;
   text-align: center;
 `;
 
-const Title = styled.span`
-  font-size: 1.5rem;
-  // color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
-  margin-bottom: 0;
-`;
 
 const KakaoTalkShareButton = styled(Button)`
   background: #fee500;
@@ -44,7 +37,8 @@ const KakaoTalkShareButton = styled(Button)`
 `;
 
 const LinkShareButton = styled(Button)`
-  background-color: rgba(217, 125, 131, 0.2);
+  // light grey bg color
+  background-color: rgba(217, 125, 131, 0.1) !important;
   border-color: rgba(217, 125, 131, 0.2) !important;
   // color: var(--title-color) !important;
   font-weight: 400 !important;
@@ -101,13 +95,9 @@ const Share = () => {
 
   return (
     <Wrapper>
-      <Divider
-        data-aos="fade-up"
-        plain
-        style={{ marginTop: 0, marginBottom: 32 }}
-      >
+      <StyledDivider>
         <Title>청첩장 공유하기</Title>
-      </Divider>
+      </StyledDivider>
       {/* <KakaoTalkShareButton
         style={{ margin: 0 }}
         icon={<MessageFilled />}

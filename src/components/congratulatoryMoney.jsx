@@ -3,6 +3,9 @@ import { Button, Divider, message, Modal } from "antd";
 import { SmileFilled,SmileOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
+import StyledDivider from "./StyledDivider.jsx";
+import { Title } from "./common.js"
+
 
 import {
   GROOM_NAME,
@@ -18,32 +21,14 @@ import {
 } from "../config";
 
 const Wrapper = styled.div`
-  padding-top: 42px;
-  padding-bottom: 18px;
-  width: 70%;
   margin: 0 auto;
   text-align: center;
-`;
-
-const Title = styled.p`
-  font-size: 1.5rem;
-  color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
-  margin-bottom: 0;
 `;
 
 const SubContent = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
-  opacity: 0.75;
   
-  @media (max-width: 768px) {
-    font-size: 0.8rem;
-  }
-  @media (max-width: 480px) {
-    font-size: 0.8rem;
-  }
 `;
 
 const Description = styled.p`
@@ -61,7 +46,8 @@ const Description = styled.p`
 `;
 
 const ButtonWrap = styled.div`
-  margin-bottom: 3.125rem;
+  margin-bottom: 36px;
+  padding: 0 24px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,27 +66,23 @@ const CongratulatoryMoney = () => {
 
   return (
     <Wrapper>
-      <Divider
-        data-aos="fade-up"
-        plain
-        style={{ marginTop: 0, marginBottom: 32 }}
-      >
+      <StyledDivider>
         <Title>마음 전하실 곳</Title>
-      </Divider>
+      </StyledDivider>
       <ButtonWrap>
         <ContactButton  onClick={() => setGroomVisible(true)}>
           <SmileFilled
             style={{ fontSize: 64, marginBottom: 10 }}
           />
           <br />
-          <SubContent>신랑측 계좌번호 확인</SubContent>
+          <SubContent>신랑측 계좌번호</SubContent>
         </ContactButton>
         <ContactButton  onClick={() => setBrideVisible(true)}>
           <SmileOutlined
             style={{ fontSize: 64, marginBottom: 10 }}
           />
           <br />
-          <SubContent>신부측 계좌번호 확인</SubContent>
+          <SubContent>신부측 계좌번호</SubContent>
         </ContactButton>
       </ButtonWrap>
       <Modal

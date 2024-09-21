@@ -41,7 +41,7 @@ const GroomBride = styled.p`
   line-height: 1.75;
   opacity: 0.85;
   margin-top: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
   width: 100%;
   text-align: center;
   @media (max-width: 768px) {

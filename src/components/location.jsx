@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import img_map from "../assets/map.png";
 import StyledDivider from "./StyledDivider.jsx";
+
 import { Title } from "./common.js"
 
 const Wrapper = styled.div`
@@ -112,43 +113,31 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
+        <b>자가용</b>
+        <br />
         어린이회관 내 공간한옥 [근화원]
         <br />
         서울 광진구 광나루로 441 ( 능동 18-11 )
         <br />
         <span>* 어린이회관 정문 주차장 이용 / 2시간 무료 주차</span>
         <br />
+        <br />
 
-      </Content>
-
-
-      <Content>
-        <SubTitle>대중교통 안내</SubTitle>
+        <b>지하철</b>
+        <br />
+        7호선 어린이대공원역 2번 출구 ( 도보 약 8분 )
         <br />
         <br />
-        2호선 낙성대역 ④번출구
-        > GS주유소끼고 좌회전
-        > 건너편에서 마을버스 관악02번 버스 탑승
-        > 제2공학관(종점) 하차
+        <b>버스</b>
         <br />
+        [ 어린이회관 ] 정류장
         <br />
-        2호선 서울대입구역 ③번출구
-        > 5511, 5513 버스 탑승
-        > 제2공학관(종점) 하차
+        일반 119 지선 3216 간선 302
         <br />
+        [ 어린이대공원역, 세종대학교 ] 정류장
         <br />
-        신림선 관악산역 ①번출구
-        > 정문쪽 버스정거장 도보이동
-        > 5511, 5516 버스 탑승 〉 제2공학관(종점) 하차
-        <br />
-        <br />
-        <SubTitle>자가용 안내</SubTitle>
-        <br />
-        <br />
-        네비게이션에서 [이라운지 서울대점]을 입력하세요.
-        <br />
-        2시간 무료 주차권을 꼭 받아가세요!
-        <br />
+        지선 3216 4212 2416 간선 721 N61 N62
+        
 
 
       </Content>

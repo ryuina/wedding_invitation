@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
 
-import { Divider } from "antd";
 import styled from "styled-components";
+import { Title } from "./common.js"
+import StyledDivider from "./StyledDivider";
 import "../styles/index.css";
 import img1 from "../assets/images/img1.jpg";
 import img2 from "../assets/images/img2.jpg";
 import img3 from "../assets/images/img3.jpg";
 
+const CloseButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+`;
 
 export function DefaultGallery() {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -82,64 +97,51 @@ export function DefaultGallery() {
           onClick={handleBackgroundClick}
         >
           <div className="relative flex items-center">
-            {/* Previous Button */}
-            <button
-              className="absolute left-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-50 rounded-full hover:bg-opacity-100"
-              onClick={handlePrev}
-            >
-              &#10094;
-            </button>
-
             {/* Full-Size Image */}
             <img
-              className="max-h-[90vh] max-w-[90vw] rounded-lg object-contain"
+              className="max-h-[100vh] max-w-[100vw] object-contain"
               src={data[selectedIndex].imageLink}
               alt="full-size"
-            />
-
-            {/* Next Button */}
-            <button
-              className="absolute right-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-0 rounded-full hover:bg-opacity-100"
+            />            
+          </div>
+          {/* Previous Button */}
+          <button
+              className="absolute left-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-0 rounded-full"
+              onClick={handlePrev}
+            >
+            &#10094;
+          </button>
+          {/* Next Button */}
+          <button
+              className="absolute right-0 text-white text-3xl p-4 cursor-pointer bg-gray-800 bg-opacity-0 rounded-full"
               onClick={handleNext}
             >
               &#10095;
             </button>
 
-            {/* Close Button */}
-            <button
-              className="absolute top-2 right-2 text-white text-2xl"
+          {/* Close Button */}
+          <CloseButton
               onClick={handleClose}
             >
               &times;
-            </button>
-          </div>
+            </CloseButton>
         </div>
       )}
     </>
   );
 }
 const Wrapper = styled.div`
-  padding-top: 42px;
-  width: 70%;
+  padding: 0 16px;
   margin: 0 auto;
-`;
-
-const Title = styled.p`
-  font-size: 1.5rem;
-  // color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
-  margin-bottom: 0;
-  text-align: center;
 `;
 
 
 const Photos = () => {
   return (
     <Wrapper>
-      <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
+      <StyledDivider>
         <Title>우리의 아름다운 순간</Title>
-      </Divider>
+      </StyledDivider>
       <DefaultGallery />
     </Wrapper>
   );

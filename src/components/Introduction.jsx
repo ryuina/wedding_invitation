@@ -16,9 +16,10 @@ const Image = styled.img`
 `
 
 const Content = styled.div`
-	font-size: 0.9rem;
+	font-size: 0.95rem;
   text-align: center;
   line-height: 1.75rem;
+  margin-bottom: 24px;
 `
 
 const Introduction = () => {
