@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import img_map from "../assets/map.png";
 import StyledDivider from "./StyledDivider.jsx";
 
 import { Title } from "./common.js"
@@ -40,13 +39,6 @@ const Map = styled.div`
   padding: 0;
 `;
 
-const LocationImage = () => {
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <img src={img_map} style={{ width: '100%', maxWidth: '800px', height: 'auto' }} />
-    </div>
-  );
-};
 
 
 const Location = () => {
@@ -137,7 +129,7 @@ const Location = () => {
         [ 어린이대공원역, 세종대학교 ] 정류장
         <br />
         지선 3216 4212 2416 간선 721 N61 N62
-        
+
 
 
       </Content>
