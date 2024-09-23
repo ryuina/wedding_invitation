@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding_invitation/static/css/main.9822dd8f.css",
-    "main.js": "/wedding_invitation/static/js/main.003263e4.js",
+    "main.js": "/wedding_invitation/static/js/main.b3fa9c81.js",
     "static/js/453.7e3e3be8.chunk.js": "/wedding_invitation/static/js/453.7e3e3be8.chunk.js",
     "static/media/img3.jpg": "/wedding_invitation/static/media/img3.18adca21c0e54edb93ea.jpg",
     "static/media/Eulyoo1945-Regular.ttf": "/wedding_invitation/static/media/Eulyoo1945-Regular.22154b183d5ef3de225d.ttf",
@@ -10,8 +10,9 @@
     "static/media/img1.jpg": "/wedding_invitation/static/media/img1.f30b689c2110f7537c44.jpg",
     "static/media/mom_to_daughter.woff": "/wedding_invitation/static/media/mom_to_daughter.a0897a3c026f9fca7b50.woff",
     "static/media/mom_to_daughter.woff2": "/wedding_invitation/static/media/mom_to_daughter.250d46c6deac93d28209.woff2",
+    "static/media/hw.jpeg": "/wedding_invitation/static/media/hw.d5b731a4892bd1215da0.jpeg",
     "static/media/timesnewroman.ttf": "/wedding_invitation/static/media/timesnewroman.f85717dad92d60284052.ttf",
-    "static/media/IMG_0060.jpg": "/wedding_invitation/static/media/IMG_0060.698e0cef37e56710776f.jpg",
+    "static/media/ia.jpg": "/wedding_invitation/static/media/ia.698e0cef37e56710776f.jpg",
     "static/media/nanum-myeongjo-37-700-normal.woff2": "/wedding_invitation/static/media/nanum-myeongjo-37-700-normal.e649e53516dd87519d52.woff2",
     "static/media/nanum-myeongjo-111-700-normal.woff2": "/wedding_invitation/static/media/nanum-myeongjo-111-700-normal.a6966553ccc52f300a48.woff2",
     "static/media/nanum-myeongjo-110-700-normal.woff2": "/wedding_invitation/static/media/nanum-myeongjo-110-700-normal.6bdaec802fb5bb96cc9c.woff2",
@@ -398,11 +399,11 @@
     "static/media/nanum-myeongjo-65-400-normal.woff": "/wedding_invitation/static/media/nanum-myeongjo-65-400-normal.82e6302fae06258a2add.woff",
     "index.html": "/wedding_invitation/index.html",
     "main.9822dd8f.css.map": "/wedding_invitation/static/css/main.9822dd8f.css.map",
-    "main.003263e4.js.map": "/wedding_invitation/static/js/main.003263e4.js.map",
+    "main.b3fa9c81.js.map": "/wedding_invitation/static/js/main.b3fa9c81.js.map",
     "453.7e3e3be8.chunk.js.map": "/wedding_invitation/static/js/453.7e3e3be8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9822dd8f.css",
-    "static/js/main.003263e4.js"
+    "static/js/main.b3fa9c81.js"
   ]
 }
