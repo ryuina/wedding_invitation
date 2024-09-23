@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import StyledDivider from "./StyledDivider";
 import { Title } from "./common.js"
-import image2 from "../assets/images/IMG_0060.jpg";
+import image2 from "../assets/images/ia.jpg";
+import image1 from "../assets/images/hw.jpeg";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -29,7 +30,7 @@ const Introduction = () => {
 				<StyledDivider>
 					<Title>신랑 주현우</Title>
 				</StyledDivider>
-				<Image />
+				<Image src={image1} />
 				<Content>
 					<li>1993년 11월 22일 출생</li>
 					<li>대구에서 유년시절을 보냄</li>
@@ -51,9 +52,9 @@ const Introduction = () => {
 					<li>서울에서 유년시절을 보냄</li>
 					<li>대학 진학 후 무서운 동아리 선배를 만남</li>
 					<li>2014년 2월 18일, 그 선배와 사랑을 시작</li>
-					<li>2018년~, 사회의 쓴맛을 느끼는 중</li>
+					<li>2018년~, 사회의 쓴맛을 느낌</li>
 					<li>2023년 2월 16일, 깜짝 놀람</li>
-					<li>신랑을 따라 미국으로 이주하여 취업에 성공</li>
+					<li>신랑을 따라 미국으로 이주하여 다시 일을 시작함</li>
 					<li>현재, 신랑과 두 고양이와 행복하게 사는 중</li>
 				</Content>
 			</Wrapper>

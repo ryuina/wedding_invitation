@@ -1,24 +1,11 @@
 import React, { useState } from "react";
 import { Button, Divider, message, Modal } from "antd";
-import { SmileFilled,SmileOutlined } from "@ant-design/icons";
+import { SmileFilled, SmileOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
 import StyledDivider from "./StyledDivider.jsx";
 import { Title } from "./common.js"
 
-
-import {
-  GROOM_NAME,
-  GROOM_ACCOUNT_NUMBER,
-  GROOM_FATHER_NAME,
-  GROOM_FATHER_ACCOUNT_NUMBER,
-  GROOM_MOTHER_NAME,
-  GROOM_MOTHER_ACCOUNT_NUMBER,
-  BRIDE_NAME,
-  BRIDE_ACCOUNT_NUMBER,
-  BRIDE_FATHER_NAME,
-  BRIDE_FATHER_ACCOUNT_NUMBER,
-} from "../config";
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -70,14 +57,14 @@ const CongratulatoryMoney = () => {
         <Title>마음 전하실 곳</Title>
       </StyledDivider>
       <ButtonWrap>
-        <ContactButton  onClick={() => setGroomVisible(true)}>
+        <ContactButton onClick={() => setGroomVisible(true)}>
           <SmileFilled
             style={{ fontSize: 64, marginBottom: 10 }}
           />
           <br />
           <SubContent>신랑측 계좌번호</SubContent>
         </ContactButton>
-        <ContactButton  onClick={() => setBrideVisible(true)}>
+        <ContactButton onClick={() => setBrideVisible(true)}>
           <SmileOutlined
             style={{ fontSize: 64, marginBottom: 10 }}
           />
@@ -91,57 +78,43 @@ const CongratulatoryMoney = () => {
         onOk={() => setGroomVisible(false)}
         onCancel={() => setGroomVisible(false)}
         footer={[
-            <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}>
+          <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}>
 
-              <Description>
-                  (계좌번호 클릭시 붙여넣기 가능한 텍스트로 복사됩니다.)
-                </Description>
-            </div>
+            <Description>
+              (계좌번호 클릭시 붙여넣기 가능한 텍스트로 복사됩니다.)
+            </Description>
+          </div>
         ]}
       >
         <div>
-          <b>신랑 계좌 (예금주:{GROOM_NAME})</b>
+          <b>신랑 주현우</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={GROOM_ACCOUNT_NUMBER}>
+          <CopyToClipboard text={'우리은행 1002 943 242612'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              {GROOM_ACCOUNT_NUMBER}
+              우리은행 1002 943 242612
             </Button>
           </CopyToClipboard>
         </div>
         <div style={{ marginTop: 24, marginBottom: 0 }}>
-          <b>신랑혼주 계좌 (예금주:{GROOM_FATHER_NAME})</b>
+          <b>신랑혼주 주일륜 (송정화)</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={GROOM_FATHER_ACCOUNT_NUMBER}>
+          <CopyToClipboard text={'대구은행 508128024108'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              {GROOM_FATHER_ACCOUNT_NUMBER}
+              대구은행 508128024108
             </Button>
           </CopyToClipboard>
         </div>
-        <div>
-          <b>신랑혼주 계좌 (예금주: {GROOM_MOTHER_NAME})</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={GROOM_MOTHER_ACCOUNT_NUMBER}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success("계좌번호가 복사되었습니다.")}
-            >
-              {GROOM_MOTHER_ACCOUNT_NUMBER}
-            </Button>
-          </CopyToClipboard>
-          
-        </div>
-        <Divider style={{marginTop:20, marginBottom:0}}/>
-        
-        
+        <Divider style={{ marginTop: 20, marginBottom: 0 }} />
+
+
       </Modal>
       <Modal
         title={<b>신부측 계좌번호</b>}
@@ -150,39 +123,52 @@ const CongratulatoryMoney = () => {
         onCancel={() => setBrideVisible(false)}
         footer={[
           <div style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}>
-          <Description>
-            (계좌번호 클릭시 붙여넣기 가능한 텍스트로 복사됩니다.)
-          </Description>
+            <Description>
+              (계좌번호 클릭시 붙여넣기 가능한 텍스트로 복사됩니다.)
+            </Description>
           </div>
         ]}
       >
         <div>
-          <b>신부 계좌 (예금주:{BRIDE_NAME})</b>
+          <b>신부 류인아</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={BRIDE_ACCOUNT_NUMBER}>
+          <CopyToClipboard text={'신한은행 110-487-077414'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              {BRIDE_ACCOUNT_NUMBER}
+              신한은행 110-487-077414
             </Button>
           </CopyToClipboard>
         </div>
         <div style={{ marginTop: 12, marginBottom: 0 }}>
-          <b>신부혼주 계좌 (예금주:{BRIDE_FATHER_NAME})</b>
+          <b>신부혼주 류광영</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={BRIDE_FATHER_ACCOUNT_NUMBER}>
+          <CopyToClipboard text={'신한 338-04-413519'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              {BRIDE_FATHER_ACCOUNT_NUMBER}
+              신한은행 338-04-413519
             </Button>
           </CopyToClipboard>
         </div>
-        <Divider style={{marginTop:20, marginBottom:0}}/>
+        <div style={{ marginTop: 12, marginBottom: 0 }}>
+          <b>신부혼주 장동숙</b>
+          <Divider type="vertical" />
+          <CopyToClipboard text={'-'}>
+            <Button
+              type="text"
+              style={{ padding: 0, margin: 0 }}
+              onClick={() => message.success("계좌번호가 복사되었습니다.")}
+            >
+              -
+            </Button>
+          </CopyToClipboard>
+        </div>
+        <Divider style={{ marginTop: 20, marginBottom: 0 }} />
       </Modal>
     </Wrapper>
   );

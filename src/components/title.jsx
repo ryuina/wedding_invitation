@@ -13,10 +13,10 @@ const TitleWrapper = styled.div`
   text-align: center;
   font-weight: 500 !important;
   // color: var(--title-color);
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
+  /* animation: fadein 3s; */
+  /* -moz-animation: fadein 3s; Firefox */
+  /* -webkit-animation: fadein 3s; Safari and Chrome */
+  /* -o-animation: fadein 3s; Opera */
 `;
 
 
