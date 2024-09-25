@@ -3,16 +3,14 @@ import styled from "styled-components";
 import { EllipsisOutlined } from "@ant-design/icons";
 import StyledDivider from "./StyledDivider.jsx";
 import { Title } from "./common.js"
-import Rsvp from "./rsvp.jsx";
 
 
 const Wrapper = styled.div`
   padding-top: 42px;
   margin: 0 auto;
-  width: 70%;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+  max-width: 900px;
+  width: 100%;
+
 `;
 
 const Content = styled.span`
@@ -100,9 +98,7 @@ const Greeting = () => {
         <div><span><b>주일륜</b> · <b>송정화</b> 의 차남</span><span><b>주현우</b></span></div>
         <div><span><b>류광영</b> · <b>장동숙</b> 의 장녀</span><span><b>류인아</b></span></div>
       </GroomBride>
-      <div>
-      <Rsvp />
-      </div>
+
     </Wrapper >
   );
 };

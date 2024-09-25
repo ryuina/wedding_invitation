@@ -6,6 +6,8 @@ import image1 from "../assets/images/hw.jpeg";
 
 const Wrapper = styled.div`
 	width: 100%;
+	max-width: 900px;
+
 `
 
 const Image = styled.img`

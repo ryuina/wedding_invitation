@@ -29,7 +29,7 @@ const Content = styled.p`
   margin: 32px 0;
 
   span {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -130,6 +130,12 @@ const Location = () => {
         <br />
         지선 3216 4212 2416 간선 721 N61 N62
 
+        <br />
+        <br />
+        <span>* 본 예식은 야외에서 진행되므로,
+          <br />
+          당일 날씨에 따라 겉옷, 우산 등을 챙겨오시기 바랍니다.
+        </span>
 
 
       </Content>

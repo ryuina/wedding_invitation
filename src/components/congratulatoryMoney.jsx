@@ -89,26 +89,26 @@ const CongratulatoryMoney = () => {
         <div>
           <b>신랑 주현우</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={'우리은행 1002 943 242612'}>
+          <CopyToClipboard text={'우리은행 1002-943-242612'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              우리은행 1002 943 242612
+              우리은행 1002-943-242612
             </Button>
           </CopyToClipboard>
         </div>
         <div style={{ marginTop: 24, marginBottom: 0 }}>
           <b>신랑혼주 주일륜 (송정화)</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={'대구은행 508128024108'}>
+          <CopyToClipboard text={'대구은행 508-12-802410-8'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              대구은행 508128024108
+              대구은행 508-12-802410-8
             </Button>
           </CopyToClipboard>
         </div>
@@ -143,7 +143,7 @@ const CongratulatoryMoney = () => {
           </CopyToClipboard>
         </div>
         <div style={{ marginTop: 12, marginBottom: 0 }}>
-          <b>신부혼주 류광영</b>
+          <b>신부혼주 류광영 (장동숙)</b>
           <Divider type="vertical" />
           <CopyToClipboard text={'신한 338-04-413519'}>
             <Button
@@ -152,19 +152,6 @@ const CongratulatoryMoney = () => {
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
               신한은행 338-04-413519
-            </Button>
-          </CopyToClipboard>
-        </div>
-        <div style={{ marginTop: 12, marginBottom: 0 }}>
-          <b>신부혼주 장동숙</b>
-          <Divider type="vertical" />
-          <CopyToClipboard text={'-'}>
-            <Button
-              type="text"
-              style={{ padding: 0, margin: 0 }}
-              onClick={() => message.success("계좌번호가 복사되었습니다.")}
-            >
-              -
             </Button>
           </CopyToClipboard>
         </div>

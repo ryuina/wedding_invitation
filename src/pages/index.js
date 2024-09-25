@@ -45,16 +45,17 @@ const IndexPage = () => {
   });
   return (
     <Wrapper>
-      <audio autoPlay loop>
+      {/* <audio autoPlay loop>
         <source src={Song} />
-      </audio>
+      </audio> */}
       <Title />
       <Greeting />
       <Photos />
       <Location />
       <CongratulatoryMoney />
       <Share />
-      
+      <Video src={video2} autoPlay muted playsInline loop />
+
       <Footer
         style={{
           background: "#D7CCC8",
@@ -65,7 +66,7 @@ const IndexPage = () => {
       >
         Copyright © 2024 Hyun Jin Ku
       </Footer>
-      
+
     </Wrapper>
   );
 };

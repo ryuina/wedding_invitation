@@ -3,8 +3,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { Button, Divider, message } from "antd";
 import { MessageFilled, LinkOutlined } from "@ant-design/icons";
 import styled from "styled-components";
-import StyledDivider from "./StyledDivider.jsx";
-import { Title } from "./common.js"
+
 import {
   KAKAOTALK_API_TOKEN,
   KAKAOTALK_SHARE_IMAGE,
@@ -16,6 +15,7 @@ import {
 const Wrapper = styled.div`
   width: 100%;
   text-align: center;
+  padding: 0 16px 16px;
 `;
 
 
@@ -95,26 +95,14 @@ const Share = () => {
 
   return (
     <Wrapper>
-      <StyledDivider>
-        <Title>청첩장 공유하기</Title>
-      </StyledDivider>
-      {/* <KakaoTalkShareButton
-        style={{ margin: 0 }}
-        icon={<MessageFilled />}
-        id="sendKakao"
-        size="large"
-        onClick={createKakaoButton}
-      >
-        카카오톡으로 공유하기
-      </KakaoTalkShareButton> */}
+
       <CopyToClipboard text={'https://ryuina.github.io/wedding_invitation/'}>
         <LinkShareButton
-          style={{ margin: 0 }}
           icon={<LinkOutlined />}
           size="large"
           onClick={() => message.success("청첩장 링크가 복사되었습니다.")}
         >
-          링크로 공유하기
+          청첩장 링크 복사
         </LinkShareButton>
       </CopyToClipboard>
     </Wrapper>

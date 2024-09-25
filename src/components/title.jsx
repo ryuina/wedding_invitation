@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import mainImage from "../assets/images/img3.jpg"
-
+import Rsvp from "./rsvp.jsx";
 const Layout = styled.div`
   width: 100%;
   overflow: hidden;
@@ -99,6 +99,8 @@ const Title = () => {
           <br />
           공간한옥 [근화원]
         </Schedule>
+        <Rsvp />
+
       </TitleWrapper>
     </Layout>
   );

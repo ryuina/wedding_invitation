@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <audio autoPlay loop>
+        {/* <audio autoPlay loop>
           <source src={Song} />
-        </audio>
+        </audio> */}
         <Title />
         <Greeting />
         <Introduction />
