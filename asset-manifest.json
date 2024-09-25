@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/wedding_invitation/static/css/main.4d9eb5fb.css",
-    "main.js": "/wedding_invitation/static/js/main.3c2b0d1f.js",
+    "main.css": "/wedding_invitation/static/css/main.f4ba84e9.css",
+    "main.js": "/wedding_invitation/static/js/main.44563ffd.js",
     "static/js/453.7e3e3be8.chunk.js": "/wedding_invitation/static/js/453.7e3e3be8.chunk.js",
     "static/media/video1_720.mov": "/wedding_invitation/static/media/video1_720.61d454ba1d67bd0af5ec.mov",
     "static/media/img3.jpg": "/wedding_invitation/static/media/img3.18adca21c0e54edb93ea.jpg",
+    "static/media/video2_720.mov": "/wedding_invitation/static/media/video2_720.bb76789f3cafe193a1a2.mov",
     "static/media/img2.jpg": "/wedding_invitation/static/media/img2.3dfa06a85d57c99e9726.jpg",
     "static/media/steal-the-show-inst.mp3": "/wedding_invitation/static/media/steal-the-show-inst.ee669782c49066c6b86a.mp3",
     "static/media/img1.jpg": "/wedding_invitation/static/media/img1.f30b689c2110f7537c44.jpg",
+    "static/media/img24.jpeg": "/wedding_invitation/static/media/img24.49dddd6d2a5e1fddb26a.jpeg",
+    "static/media/img22.jpeg": "/wedding_invitation/static/media/img22.1e72ed22391a16bb15ef.jpeg",
     "static/media/img17.jpeg": "/wedding_invitation/static/media/img17.b6bedc26f39d2c35afa5.jpeg",
+    "static/media/img21.jpeg": "/wedding_invitation/static/media/img21.5cf469afe473f359ebe0.jpeg",
+    "static/media/img23.jpeg": "/wedding_invitation/static/media/img23.f6950c8aae9529254ddb.jpeg",
+    "static/media/img20.jpeg": "/wedding_invitation/static/media/img20.2d1eb2804fae5f6b0cf5.jpeg",
     "static/media/img18.jpeg": "/wedding_invitation/static/media/img18.87fc6423ba165539ebf9.jpeg",
     "static/media/img15.JPG": "/wedding_invitation/static/media/img15.0b98fb2de6990560ad5f.JPG",
     "static/media/img9.jpg": "/wedding_invitation/static/media/img9.5ae3e12da48cbbdeec1c.jpg",
+    "static/media/img19.jpeg": "/wedding_invitation/static/media/img19.19fa9e90055ff7d79ca0.jpeg",
     "static/media/img11.JPG": "/wedding_invitation/static/media/img11.79a743dda63764213d5f.JPG",
     "static/media/img16.JPG": "/wedding_invitation/static/media/img16.ffcc85c03ce1b6fd9329.JPG",
     "static/media/img5_1.jpg": "/wedding_invitation/static/media/img5_1.05388b4b8b4ad5c679a3.jpg",
@@ -410,12 +417,12 @@
     "static/media/nanum-myeongjo-65-700-normal.woff": "/wedding_invitation/static/media/nanum-myeongjo-65-700-normal.cddbeb3f81214b42179c.woff",
     "static/media/nanum-myeongjo-65-400-normal.woff": "/wedding_invitation/static/media/nanum-myeongjo-65-400-normal.82e6302fae06258a2add.woff",
     "index.html": "/wedding_invitation/index.html",
-    "main.4d9eb5fb.css.map": "/wedding_invitation/static/css/main.4d9eb5fb.css.map",
-    "main.3c2b0d1f.js.map": "/wedding_invitation/static/js/main.3c2b0d1f.js.map",
+    "main.f4ba84e9.css.map": "/wedding_invitation/static/css/main.f4ba84e9.css.map",
+    "main.44563ffd.js.map": "/wedding_invitation/static/js/main.44563ffd.js.map",
     "453.7e3e3be8.chunk.js.map": "/wedding_invitation/static/js/453.7e3e3be8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d9eb5fb.css",
-    "static/js/main.3c2b0d1f.js"
+    "static/css/main.f4ba84e9.css",
+    "static/js/main.44563ffd.js"
   ]
 }
