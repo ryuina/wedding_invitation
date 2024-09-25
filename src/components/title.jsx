@@ -95,7 +95,7 @@ const Title = () => {
           류인아
         </GroomBride>
         <Schedule>
-          2024년 11월 2일, 토요일 오후 12시
+          2024년 11월 2일, 토요일 낮 12시
           <br />
           공간한옥 [근화원]
         </Schedule>
