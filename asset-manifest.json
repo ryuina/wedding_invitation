@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding_invitation/static/css/main.be55924b.css",
-    "main.js": "/wedding_invitation/static/js/main.7ab52f5b.js",
+    "main.js": "/wedding_invitation/static/js/main.028e3de6.js",
     "static/js/453.7e3e3be8.chunk.js": "/wedding_invitation/static/js/453.7e3e3be8.chunk.js",
     "static/media/video1_720.mov": "/wedding_invitation/static/media/video1_720.61d454ba1d67bd0af5ec.mov",
     "static/media/img3.jpg": "/wedding_invitation/static/media/img3.18adca21c0e54edb93ea.jpg",
@@ -418,11 +418,11 @@
     "static/media/nanum-myeongjo-65-400-normal.woff": "/wedding_invitation/static/media/nanum-myeongjo-65-400-normal.82e6302fae06258a2add.woff",
     "index.html": "/wedding_invitation/index.html",
     "main.be55924b.css.map": "/wedding_invitation/static/css/main.be55924b.css.map",
-    "main.7ab52f5b.js.map": "/wedding_invitation/static/js/main.7ab52f5b.js.map",
+    "main.028e3de6.js.map": "/wedding_invitation/static/js/main.028e3de6.js.map",
     "453.7e3e3be8.chunk.js.map": "/wedding_invitation/static/js/453.7e3e3be8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be55924b.css",
-    "static/js/main.7ab52f5b.js"
+    "static/js/main.028e3de6.js"
   ]
 }
