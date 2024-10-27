@@ -102,13 +102,13 @@ const CongratulatoryMoney = () => {
         <div style={{ marginTop: 24, marginBottom: 0 }}>
           <b>신랑혼주 주일륜 (송정화)</b>
           <Divider type="vertical" />
-          <CopyToClipboard text={'대구은행 508-12-802410-8'}>
+          <CopyToClipboard text={'iM뱅크 508-12-802410-8'}>
             <Button
               type="text"
               style={{ padding: 0, margin: 0 }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
-              대구은행 508-12-802410-8
+              iM뱅크 (구. 대구은행) 508-12-802410-8
             </Button>
           </CopyToClipboard>
         </div>
