@@ -5,6 +5,7 @@ import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
 import StyledDivider from "./StyledDivider.jsx";
 import { Title } from "./common.js"
+import { useSearchParams } from "react-router-dom";
 
 
 const Wrapper = styled.div`
@@ -50,6 +51,7 @@ const ContactButton = styled.div`
 const CongratulatoryMoney = () => {
   const [groomVisible, setGroomVisible] = useState(false);
   const [brideVisible, setBrideVisible] = useState(false);
+  const isForShare = window.location.pathname.includes("share");
 
   return (
     <Wrapper>
@@ -86,7 +88,7 @@ const CongratulatoryMoney = () => {
           </div>
         ]}
       >
-        <div>
+        {!isForShare && (<div>
           <b>신랑 주현우</b>
           <Divider type="vertical" />
           <CopyToClipboard text={'우리은행 1002-943-242612'}>
@@ -98,7 +100,7 @@ const CongratulatoryMoney = () => {
               우리은행 1002-943-242612
             </Button>
           </CopyToClipboard>
-        </div>
+        </div>)}
         <div style={{ marginTop: 24, marginBottom: 0 }}>
           <b>신랑혼주 주일륜 (송정화)</b>
           <Divider type="vertical" />
@@ -129,7 +131,7 @@ const CongratulatoryMoney = () => {
           </div>
         ]}
       >
-        <div>
+        {!isForShare && (<div>
           <b>신부 류인아</b>
           <Divider type="vertical" />
           <CopyToClipboard text={'신한은행 110-487-077414'}>
@@ -141,7 +143,7 @@ const CongratulatoryMoney = () => {
               신한은행 110-487-077414
             </Button>
           </CopyToClipboard>
-        </div>
+        </div>)}
         <div style={{ marginTop: 12, marginBottom: 0 }}>
           <b>신부혼주 류광영 (장동숙)</b>
           <Divider type="vertical" />
